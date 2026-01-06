@@ -19,6 +19,7 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: var(--surface-bg);
     transition: background-color 0.3s ease;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .py-100 { padding-top: var(--py-spacing); padding-bottom: var(--py-spacing); }
@@ -30,7 +31,7 @@ body {
     display: inline-block;
 }
 
-.hero-section { min-height: 85vh; }
+.hero-section { min-height: 85vh; padding: 60px 0; }
 
 .pillar-card, .stack-category-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -44,12 +45,12 @@ body {
 
 .theme-toggle {
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
     z-index: 1050;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,20 +60,42 @@ body {
 .w-fit-content { width: fit-content; }
 .card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
 
+/* Case Study Utilities */
 .bg-success-subtle { background-color: rgba(25, 135, 84, 0.1) !important; }
 [data-bs-theme="dark"] .bg-success-subtle { background-color: rgba(25, 135, 84, 0.2) !important; color: #a3cfbb; }
-
 .bi-trophy-fill, .bi-award-fill { filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3)); }
 
-/* Tech Stack & Icon Utilities */
 .stack-icon { width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; }
 .icon-sm { width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; }
 .tool-item { padding-bottom: 1rem; border-bottom: 1px solid rgba(0,0,0,0.05); margin-bottom: 1rem; }
 .tool-item:last-child { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
 
 .bg-primary-subtle { background-color: rgba(13, 110, 253, 0.1) !important; }
-.bg-success-subtle { background-color: rgba(25, 135, 84, 0.1) !important; }
 .bg-warning-subtle { background-color: rgba(255, 193, 7, 0.1) !important; }
 .bg-info-subtle { background-color: rgba(13, 202, 240, 0.1) !important; }
 .bg-surface { background-color: var(--surface-bg) !important; }
 .bg-light-alt { background-color: var(--light-alt) !important; }
+
+/* --- MOBILE RESPONSIVENESS FIXES --- */
+
+@media (max-width: 991.98px) {
+    :root { --py-spacing: 60px; }
+    .display-3 { font-size: 2.5rem; font-weight: 800; }
+    .navbar-brand { font-size: 0.9rem; }
+    .navbar-brand small { display: none; } /* Hide sub-header on mobile nav */
+}
+
+@media (max-width: 767.98px) {
+    .hero-section { text-align: center; min-height: auto; }
+    .p-5 { padding: 1.5rem !important; } /* Reduce padding in case study cards */
+    .display-3 { font-size: 2.2rem; }
+    .lead { font-size: 1rem; }
+    
+    /* Ensure the "Action" rows in case studies stack and align well */
+    .row.g-4.mb-4 > div {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
