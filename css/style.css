@@ -31,7 +31,7 @@ body {
     display: inline-block;
 }
 
-.hero-section { min-height: 85vh; padding: 60px 0; }
+.hero-section { min-height: 50vh; padding: 60px 0; }
 
 .pillar-card, .stack-category-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
