@@ -28,14 +28,13 @@
 </head>
 <body>
 
-    <button class="btn btn-primary theme-toggle" id="themeToggle" aria-label="Toggle Dark Mode">
-        <i class="bi bi-moon-stars-fill" id="toggleIcon"></i>
-    </button>
-
     <nav class="navbar navbar-expand-lg sticky-top bg-surface border-bottom">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">ARIES MAGTIBAY | <small class="fw-normal opacity-75">Advanced Agile Practitioner (PSM II) & Product Leader</small></a>
-            <div class="d-flex align-items-center">
+            <a class="navbar-brand fw-bold" href="#">ARIES MAGTIBAY</a>
+            <div class="d-flex align-items-center gap-3">
+                <button class="theme-toggle-nav" id="themeToggle" aria-label="Toggle Dark Mode">
+                    <i class="bi bi-moon-stars-fill" id="toggleIcon"></i>
+                </button>
                 <a href="mailto:magtibay.aries@gmail.com" class="btn btn-outline-primary btn-sm d-none d-md-inline-block">Let's Talk</a>
             </div>
         </div>
@@ -43,51 +42,137 @@
 
     <header class="hero-section">
         <div class="container text-center">
-            <span class="badge rounded-pill bg-primary-subtle text-primary px-3 py-2 mb-3">Available for Strategy & Execution</span>
+            <span class="badge rounded-pill bg-primary-subtle text-primary px-3 py-2 mb-3">PSM II Certified Product Leader</span>
             <h1 class="display-3 fw-800 mb-4">Product Leader & <span class="text-gradient">Agile Catalyst</span></h1>
-            <p class="lead text-secondary mx-auto mb-5" style="max-width: 700px;">
-                Bridging the gap between stakeholder vision and engineering execution. I transform complex requirements into high-impact digital products using Lean and Agile methodologies.
+            <p class="lead text-secondary mx-auto mb-5" style="max-width: 800px;">
+                Bridging the gap between stakeholder vision and engineering execution. I build high-performing, self-organizing teams that deliver award-winning G2B and G2P digital transformations.
             </p>
             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
                 <a href="#projects" class="btn btn-primary btn-lg px-5 py-3">View My Work</a>
-                <a href="#pillars" class="btn btn-outline-secondary btn-lg px-5 py-3">The Four Pillars</a>
+                <a href="#process" class="btn btn-outline-secondary btn-lg px-5 py-3">My Process</a>
             </div>
         </div>
     </header>
 
-    <section id="pillars" class="py-100 bg-light-alt">
+    <section class="py-5 impact-bar text-white shadow-lg">
+        <div class="container position-relative">
+            <div class="row g-4 align-items-center text-center text-md-start">
+                <div class="col-6 col-md-3 metric-card border-end border-white border-opacity-10 text-center">
+                    <div class="fs-1 fw-800 mb-0">3</div>
+                    <div class="small text-uppercase opacity-75 fw-bold">DGA Awards</div>
+                </div>
+                <div class="col-6 col-md-3 metric-card border-end border-white border-opacity-10 text-center">
+                    <div class="fs-1 fw-800 mb-0">5+</div>
+                    <div class="small text-uppercase opacity-75 fw-bold">Agile Years</div>
+                </div>
+                <div class="col-6 col-md-3 metric-card">
+                    <div class="d-flex flex-column align-items-center gap-3">
+                        <a href="https://www.credly.com/badges/5ad2aa1d-1d44-43a9-886a-bc6d14158a29/public_url" 
+                        target="_blank" class="certification-link p-0">
+                            <img src="asset/psm.png" alt="PSM II Badge" class="psm-badge-img">
+                        </a>
+                        
+                        <a href="https://sixsigma.freshlearn.com/certificate/1930309" 
+                        target="_blank" class="text-white text-decoration-none small opacity-75 fw-bold certification-link py-1 px-2 rounded" 
+                        style="font-size: 0.7rem; border: 1px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.1);">
+                            <i class="bi bi-award me-1"></i>LEAN SIX SIGMA WHITE BELT
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 metric-card text-center">
+                    <div class="fs-1 fw-800 mb-0">100%</div>
+                    <div class="small text-uppercase opacity-75 fw-bold">Project Delivery</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="py-100">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="fw-bold">Strategic Pillars</h2>
-                <p class="text-secondary">A multi-disciplinary approach to software delivery.</p>
+                <h2 class="fw-bold">From Vision to Value</h2>
+                <p class="text-secondary lead">How I manage the product lifecycle to ensure alignment and speed.</p>
             </div>
+            
+            <div class="row g-4 mt-2">
+                <div class="col-md-3">
+                    <div class="process-step h-100 shadow-sm">
+                        <div class="step-number">1</div>
+                        <h5 class="fw-bold mt-2">Discovery</h5>
+                        <p class="small text-muted mb-0">Eliciting requirements via Event Storming and Gap Analysis to identify the "Current vs. Future" state.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="process-step h-100 shadow-sm">
+                        <div class="step-number">2</div>
+                        <h5 class="fw-bold mt-2">Strategy</h5>
+                        <p class="small text-muted mb-0">Prioritizing the Product Backlog using ROI and User-Centric mapping to define a clear MVP.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="process-step h-100 shadow-sm">
+                        <div class="step-number">3</div>
+                        <h5 class="fw-bold mt-2">Sprint</h5>
+                        <p class="small text-muted mb-0">Facilitating Scrum ceremonies and removing blockers to maintain high team velocity and morale.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="process-step h-100 shadow-sm">
+                        <div class="step-number">4</div>
+                        <h5 class="fw-bold mt-2">Delivery</h5>
+                        <p class="small text-muted mb-0">Managing UAT, stakeholder demos, and closing the feedback loop for continuous improvement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-5">
+        <div class="container">
+            <div class="card p-4 border-0 bg-light-alt rounded-4 text-center">
+                <h5 class="fw-bold mb-3">Leadership & Soft Skills</h5>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <span class="skill-badge">Stakeholder Negotiation</span>
+                    <span class="skill-badge">Servant Leadership (PSM II)</span>
+                    <span class="skill-badge">Gap Analysis</span>
+                    <span class="skill-badge">Conflict Resolution</span>
+                    <span class="skill-badge">Change Management</span>
+                    <span class="skill-badge">Risk Mitigation</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pillars" class="py-100 bg-light-alt">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5">The Four Pillars of My Role</h2>
             <div class="row g-4">
                 <div class="col-6 col-md-3">
-                    <div class="card pillar-card h-100 border-0 shadow-sm p-3 p-md-4">
+                    <div class="card pillar-card h-100 border-0 shadow-sm p-4">
                         <i class="bi bi-rocket-takeoff text-primary fs-1 mb-3"></i>
                         <h5 class="fw-bold">Product Owner</h5>
-                        <p class="small text-secondary mb-0">Vision, Backlog Prioritization, ROI, & User-Centric Roadmap strategy.</p>
+                        <p class="small text-secondary mb-0">Vision, Backlog Prioritization, & Roadmap strategy.</p>
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
-                    <div class="card pillar-card h-100 border-0 shadow-sm p-3 p-md-4">
+                    <div class="card pillar-card h-100 border-0 shadow-sm p-4">
                         <i class="bi bi-search text-primary fs-1 mb-3"></i>
                         <h5 class="fw-bold">Business Analyst</h5>
-                        <p class="small text-secondary mb-0">Requirement Elicitation, Process Mapping, & Data-driven insights.</p>
+                        <p class="small text-secondary mb-0">Process Mapping & Requirement Elicitation.</p>
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
-                    <div class="card pillar-card h-100 border-0 shadow-sm p-3 p-md-4">
+                    <div class="card pillar-card h-100 border-0 shadow-sm p-4">
                         <i class="bi bi-shield-check text-primary fs-1 mb-3"></i>
                         <h5 class="fw-bold">Project Manager</h5>
-                        <p class="small text-secondary mb-0">Risk Mitigation, Budgeting, & Stakeholder Communication.</p>
+                        <p class="small text-secondary mb-0">Budgeting & Stakeholder Communication.</p>
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
-                    <div class="card pillar-card h-100 border-0 shadow-sm p-3 p-md-4">
+                    <div class="card pillar-card h-100 border-0 shadow-sm p-4">
                         <i class="bi bi-people text-primary fs-1 mb-3"></i>
                         <h5 class="fw-bold">Scrum Master</h5>
-                        <p class="small text-secondary mb-0">Facilitation, Removing Blockers, & Continuous Team Velocity Improvement.</p>
+                        <p class="small text-secondary mb-0">Facilitation & Continuous Team velocity.</p>
                     </div>
                 </div>
             </div>
@@ -97,8 +182,8 @@
     <section id="projects" class="py-100">
         <div class="container">
             <div class="mb-5 text-center text-md-start">
-                <h2 class="fw-bold">Impactful Projects</h2>
-                <p class="text-secondary lead">Award-winning solutions delivered through strategic product leadership.</p>
+                <h2 class="fw-bold">Award-Winning Impact</h2>
+                <p class="text-secondary lead">Strategic leadership met with measurable success.</p>
             </div>
 
             <div class="row g-5">
@@ -108,31 +193,30 @@
                             <div class="col-lg-4 p-4 p-md-5 d-flex flex-column justify-content-center bg-primary text-white text-center text-lg-start">
                                 <span class="badge bg-white text-primary mb-2 mx-auto mx-lg-0 w-fit-content">2018</span>
                                 <h3 class="fw-bold">GIS-RPTA Integration</h3>
-                                <p class="small opacity-75">Bridging Data and Revenue</p>
                                 <div class="mt-4 p-3 bg-white bg-opacity-10 rounded border border-white border-opacity-25">
                                     <i class="bi bi-trophy-fill me-2"></i>
                                     <span class="small fw-bold">2nd Place: Best in eGOV Business Empowerment</span>
                                 </div>
                             </div>
                             <div class="col-lg-8 p-4 p-md-5 bg-surface">
-                                <h5 class="fw-bold text-primary">The Situation</h5>
-                                <p class="text-secondary">Revenue leakage due to disconnected physical land records and tax databases, making property tax collection inefficient.</p>
+                                <h5 class="fw-bold text-primary">The Situation & Outcome</h5>
+                                <p class="text-secondary">Connected physical land records with tax databases to stop revenue leakage and automate property assessment.</p>
                                 <div class="row g-4 mb-4 mt-1">
-                                    <div class="col-md-4">
+                                    <div class="col-md-4 text-center text-md-start">
                                         <h6 class="fw-bold small text-uppercase"><i class="bi bi-search me-2 text-primary"></i>BA Action</h6>
                                         <p class="small text-muted mb-0">Data modeling to map spatial GIS coordinates to legacy tax IDs.</p>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-4 text-center text-md-start">
                                         <h6 class="fw-bold small text-uppercase"><i class="bi bi-briefcase me-2 text-primary"></i>PM Action</h6>
                                         <p class="small text-muted mb-0">Vendor management and IT stakeholder alignment for audit compliance.</p>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-4 text-center text-md-start">
                                         <h6 class="fw-bold small text-uppercase"><i class="bi bi-bullseye me-2 text-primary"></i>PO Action</h6>
                                         <p class="small text-muted mb-0">Defined MVP for Treasurer’s dashboard to identify un-assessed properties.</p>
                                     </div>
                                 </div>
                                 <div class="p-3 border-start border-success border-4 bg-success-subtle rounded-end">
-                                    <strong>The Result:</strong> Won 2nd Place at Digital Cities PH. Automated mapping reduced manual errors by 40% and significantly boosted revenue collection.
+                                    <strong>The Result:</strong> Won 2nd Place at Digital Cities PH. Reduced manual errors by 40% and boosted revenue collection.
                                 </div>
                             </div>
                         </div>
@@ -144,32 +228,31 @@
                         <div class="row g-0 flex-lg-row-reverse">
                             <div class="col-lg-4 p-4 p-md-5 d-flex flex-column justify-content-center bg-dark text-white text-center text-lg-start">
                                 <span class="badge bg-primary mb-2 mx-auto mx-lg-0 w-fit-content">2019</span>
-                                <h3 class="fw-bold">Digital Finance Transformation</h3>
-                                <p class="small opacity-75">Financial Inclusion via Digital G2P</p>
+                                <h3 class="fw-bold">Digital Finance Hub</h3>
                                 <div class="mt-4 p-3 bg-white bg-opacity-10 rounded border border-white border-opacity-25">
                                     <i class="bi bi-award-fill me-2 text-warning"></i>
                                     <span class="small fw-bold">Winner: Best in eGOV Digital Finance</span>
                                 </div>
                             </div>
                             <div class="col-lg-8 p-4 p-md-5 bg-surface">
-                                <h5 class="fw-bold text-primary">The Task</h5>
-                                <p class="text-secondary">Design and implement a digital payment ecosystem to streamline G2P efficiency and remove physical barriers for citizens.</p>
+                                <h5 class="fw-bold text-primary">Financial Inclusion via G2P</h5>
+                                <p class="text-secondary">Implemented a digital payment ecosystem to streamline G2P efficiency and remove physical barriers for citizens.</p>
                                 <div class="row g-4 mb-4 mt-1">
-                                    <div class="col-md-4">
-                                        <h6 class="fw-bold small text-uppercase">Product Owner</h6>
-                                        <p class="small text-muted mb-0">Roadmap prioritization for high-impact transactions (permits/aid).</p>
+                                    <div class="col-md-4 text-center text-md-start">
+                                        <h6 class="fw-bold small text-uppercase"><i class="bi bi-rocket-takeoff me-2 text-primary"></i>PO Role</h6>
+                                        <p class="small text-muted mb-0">Prioritized high-impact permit and aid transactions for digital release.</p>
                                     </div>
-                                    <div class="col-md-4">
-                                        <h6 class="fw-bold small text-uppercase">Scrum Master</h6>
-                                        <p class="small text-muted mb-0">Facilitated "Agile-Lite" ceremonies with cross-functional teams.</p>
+                                    <div class="col-md-4 text-center text-md-start">
+                                        <h6 class="fw-bold small text-uppercase"><i class="bi bi-people me-2 text-primary"></i>Scrum Lead</h6>
+                                        <p class="small text-muted mb-0">Facilitated "Agile-Lite" ceremonies with cross-functional gov teams.</p>
                                     </div>
-                                    <div class="col-md-4">
-                                        <h6 class="fw-bold small text-uppercase">Business Analyst</h6>
-                                        <p class="small text-muted mb-0">Mapped end-to-end citizen journeys for inclusivity.</p>
+                                    <div class="col-md-4 text-center text-md-start">
+                                        <h6 class="fw-bold small text-uppercase"><i class="bi bi-diagram-3 me-2 text-primary"></i>BA Role</h6>
+                                        <p class="small text-muted mb-0">Mapped end-to-end citizen journeys for maximum inclusivity.</p>
                                     </div>
                                 </div>
                                 <div class="p-3 border-start border-success border-4 bg-success-subtle rounded-end">
-                                    <strong>The Result:</strong> Awarded Best in Digital Finance Empowerment. Transitioned manual processes to digital, reducing processing time from days to minutes.
+                                    <strong>The Result:</strong> Awarded Best in Digital Finance Empowerment. Reduced processing time from days to minutes.
                                 </div>
                             </div>
                         </div>
@@ -180,51 +263,32 @@
                     <div class="card border-0 bg-light-alt rounded-4 overflow-hidden shadow-sm">
                         <div class="row g-0">
                             <div class="col-lg-4 p-4 p-md-5 d-flex flex-column justify-content-center bg-info text-dark text-center text-lg-start">
-                                <span class="badge bg-dark text-white mb-2 mx-auto mx-lg-0 w-fit-content">2020 (Pandemic Response)</span>
-                                <h3 class="fw-bold">Crisis-Ready Tourism Hub</h3>
-                                <p class="small opacity-75">Contactless Flow & Compliance</p>
+                                <span class="badge bg-dark text-white mb-2 mx-auto mx-lg-0 w-fit-content">2020 (Pandemic)</span>
+                                <h3 class="fw-bold">Contactless Tourism</h3>
                                 <div class="mt-4 p-3 bg-white bg-opacity-25 rounded border border-dark border-opacity-10">
                                     <i class="bi bi-lightbulb-fill me-2"></i>
                                     <span class="small fw-bold">Recognition for Innovation (DGA)</span>
                                 </div>
                             </div>
                             <div class="col-lg-8 p-4 p-md-5 bg-surface">
-                                <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <h5 class="fw-bold text-info">The Challenge</h5>
-                                        <p class="text-secondary small">The pandemic halted local tourism. We needed a contactless, capacity-controlled system to reopen safely.</p>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <h5 class="fw-bold text-info">The Pivot</h5>
-                                        <p class="text-secondary small fst-italic">Originally a marketing portal, I pivoted the vision to a Health-Integrated Booking Engine in 3 weeks.</p>
-                                    </div>
-                                </div>
-                                <hr class="my-3 my-md-4 opacity-50">
-                                <div class="row g-4 mb-4">
+                                <h5 class="fw-bold text-info">The Challenge & The Pivot</h5>
+                                <p class="text-secondary">Pivoted a marketing portal into a Health-Integrated Booking Engine in 3 weeks to reopen local tourism safely.</p>
+                                <div class="row g-4 mb-4 mt-1">
                                     <div class="col-md-4 text-center text-md-start">
-                                        <div class="d-flex align-items-center mb-2 justify-content-center justify-content-md-start">
-                                            <div class="icon-sm bg-info-subtle text-info rounded-circle me-2"><i class="bi bi-arrow-repeat"></i></div>
-                                            <h6 class="fw-bold mb-0 small">PO Pivot</h6>
-                                        </div>
+                                        <h6 class="fw-bold small text-uppercase"><i class="bi bi-arrow-repeat me-2 text-info"></i>PO Pivot</h6>
                                         <p class="small text-muted mb-0">Redefined MVP for health tracking and capacity logic.</p>
                                     </div>
                                     <div class="col-md-4 text-center text-md-start">
-                                        <div class="d-flex align-items-center mb-2 justify-content-center justify-content-md-start">
-                                            <div class="icon-sm bg-info-subtle text-info rounded-circle me-2"><i class="bi bi-clock-history"></i></div>
-                                            <h6 class="fw-bold mb-0 small">PM Execution</h6>
-                                        </div>
-                                        <p class="small text-muted mb-0">Managed tight 3-month remote delivery cycles.</p>
+                                        <h6 class="fw-bold small text-uppercase"><i class="bi bi-clock-history me-2 text-info"></i>PM Lead</h6>
+                                        <p class="small text-muted mb-0">Managed tight 3-month remote delivery and compliance cycles.</p>
                                     </div>
                                     <div class="col-md-4 text-center text-md-start">
-                                        <div class="d-flex align-items-center mb-2 justify-content-center justify-content-md-start">
-                                            <div class="icon-sm bg-info-subtle text-info rounded-circle me-2"><i class="bi bi-clipboard-check"></i></div>
-                                            <h6 class="fw-bold mb-0 small">BA/QA</h6>
-                                        </div>
-                                        <p class="small text-muted mb-0">Documented complex logic and led officer UAT.</p>
+                                        <h6 class="fw-bold small text-uppercase"><i class="bi bi-clipboard-check me-2 text-info"></i>BA/QA</h6>
+                                        <p class="small text-muted mb-0">Documented complex logic and led remote officer UAT.</p>
                                     </div>
                                 </div>
                                 <div class="p-3 border-start border-info border-4 bg-info-subtle rounded-end">
-                                    <strong>The Impact:</strong> Received Innovation Recognition. Safely reopened tourism months ahead of neighbors.
+                                    <strong>The Impact:</strong> Received Innovation Recognition. Safely reopened tourism months ahead of neighboring municipalities.
                                 </div>
                             </div>
                         </div>
@@ -237,8 +301,8 @@
     <section id="stack" class="py-100 bg-light-alt">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="fw-bold">The Strategic Tech Stack</h2>
-                <p class="text-secondary">Enterprise-grade tools I use to orchestrate delivery and maintain the "Single Source of Truth."</p>
+                <h2 class="fw-bold">Strategic Tech Stack</h2>
+                <p class="text-secondary lead">Tools optimized for team performance, transparency, and value delivery.</p>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4">
@@ -250,20 +314,21 @@
                         <div class="tool-item">
                             <div class="d-flex justify-content-between align-items-center mb-1">
                                 <span class="fw-bold">Jira</span>
-                                <span class="badge bg-primary-subtle text-primary small">Advanced</span>
+                                <span class="badge bg-primary-subtle text-primary small">Expert</span>
                             </div>
-                            <p class="small text-muted">My primary tool for Scrum and Kanban management. Custom workflows, JQL reporting, and epics.</p>
+                            <p class="small text-muted">Expert in configuring <strong>Jira Automation</strong> to reduce manual status reporting by the team by 30%.</p>
                         </div>
                         <div class="tool-item">
                             <span class="fw-bold d-block mb-1">ClickUp</span>
-                            <p class="small text-muted">High-level project visibility, time-tracking, and dashboards for stakeholders.</p>
+                            <p class="small text-muted">High-level project visibility, time-tracking, and executive dashboards for stakeholders.</p>
                         </div>
                         <div class="tool-item">
                             <span class="fw-bold d-block mb-1">Trello</span>
-                            <p class="small text-muted">Lightweight task tracking and rapid prototyping of workflows.</p>
+                            <p class="small text-muted">Lightweight task tracking and rapid prototyping of workflow concepts.</p>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-4">
                     <div class="stack-category-card h-100 shadow-sm border-0 card p-4 bg-surface">
                         <div class="d-flex align-items-center mb-4">
@@ -275,14 +340,15 @@
                                 <span class="fw-bold">Confluence</span>
                                 <span class="badge bg-success-subtle text-success small">Expert</span>
                             </div>
-                            <p class="small text-muted">"Single Source of Truth." PRDs, Stakeholder Maps, and Release Notes.</p>
+                            <p class="small text-muted">Maintaining the "Single Source of Truth" via PRDs, Stakeholder Maps, and Release Notes.</p>
                         </div>
                         <div class="tool-item">
                             <span class="fw-bold d-block mb-1">Notion</span>
-                            <p class="small text-muted">Collaborative workspaces, wikis, and Notion databases for UAT results.</p>
+                            <p class="small text-muted">Collaborative workspaces, internal wikis, and structured Notion databases for UAT results.</p>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-4">
                     <div class="stack-category-card h-100 shadow-sm border-0 card p-4 bg-surface">
                         <div class="d-flex align-items-center mb-4">
@@ -294,7 +360,11 @@
                                 <span class="fw-bold">Miro</span>
                                 <span class="badge bg-warning-subtle text-warning small">Facilitator</span>
                             </div>
-                            <p class="small text-muted">Discovery heart. Facilitate remote workshops, User Story Mapping, and "As-Is vs. To-Be" modeling.</p>
+                            <p class="small text-muted">Facilitated <strong>Event Storming</strong> and remote Retrospectives to maintain high team engagement in hybrid environments.</p>
+                        </div>
+                        <div class="tool-item">
+                            <span class="fw-bold d-block mb-1">Figma</span>
+                            <p class="small text-muted">Collaborating with design teams for wireframe reviews and ensuring UI/UX alignment with requirements.</p>
                         </div>
                     </div>
                 </div>
@@ -306,21 +376,23 @@
         <div class="container text-center">
             <h2 class="fw-bold mb-4">Let’s build something together.</h2>
             <div class="d-flex justify-content-center gap-4 mb-4">
-                <a href="https://www.linkedin.com/in/aries-magtibay" target="_blank" class="text-secondary fs-3" title="LinkedIn Profile"><i class="bi bi-linkedin"></i></a>
-                <a href="mailto:magtibay.aries@gmail.com?subject=Portfolio%20Inquiry%20-%20Product%20Leadership" class="text-secondary fs-3" title="Send Email">
-                    <i class="bi bi-envelope-at-fill"></i>
-                </a>
+                <a href="https://www.linkedin.com/in/aries-magtibay" target="_blank" class="text-secondary fs-3"><i class="bi bi-linkedin"></i></a>
+                <a href="mailto:magtibay.aries@gmail.com?subject=Portfolio%20Inquiry" class="text-secondary fs-3"><i class="bi bi-envelope-at-fill"></i></a>
             </div>
             <p class="text-muted small mb-0">&copy; 2026 Aries Magtibay. All rights reserved.</p>
         </div>
     </footer>
+
+    <a href="asset/Magtibay Aries.pdf" download class="btn btn-primary resume-fab d-flex align-items-center gap-2">
+        <i class="bi bi-file-earmark-pdf-fill fs-5"></i>
+        <span>Download Resume</span>
+    </a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         const themeToggle = document.getElementById('themeToggle');
         const themeRoot = document.getElementById('theme-root');
         const icon = document.getElementById('toggleIcon');
-
         themeToggle.addEventListener('click', () => {
             const currentTheme = themeRoot.getAttribute('data-bs-theme');
             const newTheme = currentTheme === 'light' ? 'dark' : 'light';
@@ -328,7 +400,7 @@
             icon.className = newTheme === 'dark' ? 'bi bi-sun-fill' : 'bi bi-moon-stars-fill';
         });
     </script>
-        <script type="application/ld+json">
+    <script type="application/ld+json">
         {
         "@context": "https://schema.org/",
         "@type": "Person",
